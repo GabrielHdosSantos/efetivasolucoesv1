@@ -1,0 +1,36 @@
+.link-email {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.zap {
+  width: 40%;
+  height: 10%;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid #f29316;
+  transition: all 0.25s;
+  background-color: transparent;
+}
+
+.zap:hover {
+  transition: all 0.25s;
+  background-color: #f29316;
+  color: white;
+}
+
+.zap:hover a {
+  color: white;
+}
+
+.zap a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 815px) {
+  .textos {
+    text-align: center;
+  }
+}

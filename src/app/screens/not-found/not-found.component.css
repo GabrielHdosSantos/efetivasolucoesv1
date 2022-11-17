@@ -1,0 +1,8 @@
+.paragrafo {
+  font-size: 1.3rem;
+}
+
+.imagem {
+  border-radius: 50%;
+  background-size: contain;
+}

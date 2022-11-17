@@ -1,0 +1,40 @@
+.icone {
+  color: rgb(201, 201, 201);
+  font-size: 3rem;
+  transition: all 0.2s;
+}
+
+.icone:hover {
+  transition: all 0.2s;
+  color: rgb(206, 66, 66);
+}
+
+.botao {
+  border: 2px solid rgb(206, 66, 66);
+  color: rgb(206, 66, 66);
+  background-color: transparent;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.botao:hover {
+  transition: all 0.2s;
+  background-color: rgb(206, 66, 66);
+  color: white;
+}
+
+@media (max-width: 799px) {
+  .duvida {
+    margin-top: 1.5rem;
+  }
+}
+
+.link-email {
+  text-decoration: none;
+  color: black;
+}
+
+.link-email:hover {
+  transition: all 0.3s;
+  color: rgb(206, 66, 66);
+}

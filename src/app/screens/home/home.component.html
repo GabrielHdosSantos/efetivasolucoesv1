@@ -1,0 +1,143 @@
+<app-nav></app-nav>
+<div class="grid flex justify-content-evenly flex-wrap mt-5">
+  <div class="flex flex-grow-2 flex-column w-30rem h-26rem">
+    <h1 class="m-3 uppercase">
+      Transoformando o mundo através da
+      <a
+        class="cursor-pointer"
+        style="color: rgb(206, 66, 66)"
+        (click)="goToTecnologias()"
+        >tecnologia.</a
+      >
+    </h1>
+    <p class="ml-3">
+      Conheça abaixo um pouco da história da nossa empresa e como todo esse
+      negócio começou!
+    </p>
+    <div class="ml-3 flex text-center align-items-center h-3rem">
+      <button class="w-7rem h-2rem botao-confira" (click)="goToAboutUs()">
+        Confira</button
+      ><a class="ml-2 text-3xl flecha" style="color: rgb(206, 66, 66)">←</a>
+    </div>
+  </div>
+  <div
+    class="flex flex-grow-2 align-items-center justify-content-center w-30rem h-26rem"
+  >
+    <p-image
+      src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_960_720.jpg"
+      alt="Image"
+      width="100%"
+    >
+    </p-image>
+  </div>
+</div>
+<div class="grid flex flex-column mt-3">
+  <div class="flex text-center flex-column bg-gray-100 mb-5">
+    <h1>
+      Por que a <a class="ozi" style="color: rgb(206, 66, 66)">EFETIVA?</a>
+    </h1>
+    <p>
+      Possuímos qualificações que além de <br />
+      economizar tempo, te trazer uma praticidade <br />
+      maior em relação aos projetos.
+    </p>
+    <h3 class="mb-4" style="color: rgb(206, 66, 66)">[ confira ]</h3>
+  </div>
+</div>
+<div class="grid justify-content-evenly w-full h-full">
+  <div class="shadow-6 border-round h-17rem w-20rem text-center confira">
+    <h3 style="color: rgb(206, 66, 66)" class="text-2xl">
+      Soluções de ponta-a-ponta
+    </h3>
+    <p class="m-3 text-black-alpha-90">
+      Somos desenvolvedores de software empolgados em criar produtos e soluções
+      digitais usando as mais recentes tecnologias e metodologias ágeis.
+    </p>
+  </div>
+  <div class="shadow-6 border-round h-17rem w-20rem text-center confira">
+    <h3 style="color: rgb(206, 66, 66)" class="text-2xl">Abordagem prática</h3>
+    <p class="m-3 text-black-alpha-90">
+      Desenvolvemos uma relação estreita com a nossa realidade, apuramos dados
+      específicos e procuramos de forma proativa oportunidades de crescimento.
+    </p>
+  </div>
+  <div class="shadow-6 border-round h-17rem w-20rem text-center confira">
+    <h3 style="color: rgb(206, 66, 66)" class="text-2xl">Tirando do papel</h3>
+    <p class="m-3 text-black-alpha-90">
+      Te ajudamos a tirar as suas ideias do papel, fornecendo uma mão de obra
+      qualificada e ágil a sua disposição.
+    </p>
+  </div>
+</div>
+<div class="bg-gray-100" id="missao">
+  <div class="grid flex justify-content-center h-full mt-8 mb-3">
+    <div class="h-20rem w-30rem centro mt-5">
+      <h2 style="color: rgb(206, 66, 66)">Missão da EFETIVA:</h2>
+      <p class="parag-missao mr-3">
+        Transformar a realidade de pessoas oferecendo vantagens reais aos
+        consumidores e agregando a vida de todos que tem acesso aos nossos
+        serviços, de uma forma ambigua, temos a missão de trocar experiências,
+        ouvir e traçar uma solução escalável e eficaz.
+      </p>
+    </div>
+    <div class="zoom mt-5">
+      <img
+        src="https://ozitech.com.br/images/features/img-1.png"
+        class="h-16rem w-23rem"
+      />
+    </div>
+  </div>
+  <div class="grid flex justify-content-center h-full mt-8">
+    <div class="zoom2">
+      <img src="https://i.imgur.com/vJ22XIQ.png" class="h-16rem w-23rem" />
+    </div>
+    <div class="h-20rem w-30rem centro2 mt-5">
+      <h2 style="color: rgb(206, 66, 66)">O que temos a oferecer?</h2>
+      <p class="parag-missao ml-3">
+        <li>Aplicações WEB.</li>
+        <li>MVP's.</li>
+        <li>Landing Pages.</li>
+        <li>Suporte e monitoramento.</li>
+      </p>
+    </div>
+  </div>
+</div>
+<h1 class="text-center mt-5">
+  Sobre a origem da <a style="color: rgb(206, 66, 66)"> EFETIVA </a>
+</h1>
+<div
+  class="grid flex justify-content-evenly mt-3 h-full align-items-center"
+  id="sobre-nos"
+>
+  <div class="w-30rem h-20rem sobre">
+    <h2><a style="color: rgb(206, 66, 66)">Origem</a></h2>
+    <p>
+      Foi nessa cidade em Santa Catarina que toda nossa história
+      começou, nossos fundadores tinham o sonho de mudar o mundo com a tecnologia e
+      hoje com acesso a isso, inovamos cada vez mais para poder alcançar esse
+      desejo, podendo facilitar a vida de nossos clientes e amigos, com esforço,
+      trabalho em equipe e muita genialidade.
+    </p>
+  </div>
+  <div class="w-28rem align-content-center">
+    <p-galleria
+      [value]="images"
+      [numVisible]="5"
+      [showThumbnails]="false"
+      [showIndicators]="true"
+      [changeItemOnIndicatorHover]="true"
+      [showIndicatorsOnItem]="true"
+    >
+      <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" class="photos" width="100%" />
+      </ng-template>
+      <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+          <img [src]="item.thumbnailImageSrc" />
+        </div>
+      </ng-template>
+    </p-galleria>
+  </div>
+</div>
+<hr />
+<app-footer></app-footer>

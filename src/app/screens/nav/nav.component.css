@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list p {
+  color: rgb(206, 66, 66);
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  height: 100%;
+  margin-left: 20px;
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nav-list p::before,
+.nav-list p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform .2s ease-in-out;
+}
+
+.nav-list p::before {
+  border-left: 1px solid rgb(206, 66, 66);
+  border-right: 1px solid rgb(206, 66, 66);
+  transform: scaleY(0);
+}
+
+.nav-list p::after {
+  border-top: 1px solid rgb(206, 66, 66);
+  border-bottom: 1px solid rgb(206, 66, 66);
+  transform: scaleX(0);
+}
+
+.nav-list p:hover::before {
+  transform: scaleY(1);
+}
+
+.nav-list p:hover::after {
+  transform: scaleX(1);
+}
+
+.logo {
+  height: 50px;
+  width: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("https://ozitech.com.br/images/logo-dark.png");
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 2px;
+  margin-left: 32px;
+  font-size: 1.2rem;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background-color: rgb(206, 66, 66);
+  margin: 8px;
+}
+
+@media (max-width: 999px) {
+  .total {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    display: none;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+.list-bar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-bar li {
+  font-size: 1.7rem;
+  margin-top: 20%;
+  font-weight: 400;
+  color: rgb(254, 167, 27);
+  width: 100%;
+  text-align: center;
+}

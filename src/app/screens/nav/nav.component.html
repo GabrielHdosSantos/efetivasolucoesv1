@@ -1,0 +1,26 @@
+<div class="total">
+  <header>
+    <p-sidebar class="sidebar" style="color: rgb(206, 66 ,66);" [(visible)]="mobileMenu" position="right">
+      <ul class="list-bar">
+        <li (click)="goToAboutUs()">Sobre nós</li>
+        <li (click)="goDown()" class="cursor-pointer">Missão</li>
+        <li (click)="goToTecnologias()" class="cursor-pointer">Tecnologias</li>
+        <li (click)="goToContact()">Contatos</li>
+      </ul></p-sidebar
+    >
+    <nav>
+      <h2 style="color: rgb(206, 66, 66);">Efetiva Soluções</h2>
+      <div class="mobile-menu" (click)="mobileMenu = true">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li (click)="goToAboutUs()"><p> Sobre nós</p></li>
+        <li (click)="goDown()"><p>Missão</p></li>
+        <li (click)="goToTecnologias()"><p>Tecnologias</p></li>
+        <li (click)="goToContact()"><p>Contato</p></li>
+      </ul>
+    </nav>
+  </header>
+</div>

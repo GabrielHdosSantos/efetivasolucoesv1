@@ -1,0 +1,4 @@
+.java {
+  border: 3px solid;
+  border-image: linear-gradient(90deg, #F29316,#469AAC) 1;
+}
