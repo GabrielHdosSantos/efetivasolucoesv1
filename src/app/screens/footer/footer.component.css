@@ -19,7 +19,7 @@
 
 .botao:hover {
   transition: all 0.2s;
-  background-color: rgb(206, 66, 66);
+  background-color: #ce4242;
   color: white;
 }
 
