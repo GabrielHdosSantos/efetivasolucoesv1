@@ -27,7 +27,7 @@ export class NavComponent implements OnInit {
   }
 
   goDown() {
-    if ((this.router.url as string) == '/tecnologias') {
+    if ((this.router.url as string) == '/tecnologias' || (this.router.url as string) == '/contact') {
       this.router.navigate(['home']);
       this.scoller.scrollToAnchor('missao');
     } else {
@@ -36,11 +36,11 @@ export class NavComponent implements OnInit {
   }
 
   goToAboutUs() {
-    if ((this.router.url as string) == '/tecnologias') {
+    if ((this.router.url as string) == '/tecnologias' || (this.router.url as string) == '/contact') {
       this.router.navigate(['home']);
-      this.scoller.scrollToAnchor('sobre-nos');
+      this.scoller.scrollToAnchor('missao');
     } else {
-      this.scoller.scrollToAnchor('sobre-nos');
+      this.scoller.scrollToAnchor('missao');
     }
   }
 }
