@@ -45,10 +45,16 @@
   border: 3px solid rgb(206, 66, 66);
 }
 
-
-
 .parag-missao {
   font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.parag-missao li {
+  margin-left: 4.5rem;
 }
 
 .centro {
@@ -57,11 +63,9 @@
 }
 
 .centro2 {
-  text-align: right;
+  text-align: center;
   letter-spacing: 0.5px;
 }
-
-
 
 .zoom {
 	overflow: hidden;
