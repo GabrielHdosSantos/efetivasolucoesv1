@@ -1,36 +1,83 @@
-.link-email {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
+.screen {
+  width: 100%;
+  height: 100%;
 }
 
-.zap {
-  width: 40%;
-  height: 10%;
-  font-size: 1rem;
-  outline: none;
-  border: 2px solid rgb(206, 66, 66);
-  transition: all 0.25s;
-  background-color: transparent;
+.sides {
+  display: flex;
+  justify-content: center;
+  height: 40rem;
+  align-items: center;
+  flex-direction: row;
 }
 
-.zap:hover {
-  transition: all 0.25s;
-  background-color: rgb(206, 66, 66);
+.left {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top, .mid, .bottom {
+  margin-top: 3%;
+  width: 60%;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  width: 5rem;
+  height: 35px;
+  outline: 0;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  background-color: #ce4242;
   color: white;
+  font-size: 17px;
+  transition: all 0.2s;
 }
 
-.zap:hover a {
-  color: white;
+button:hover {
+  transition: all 0.2s;
+  background-color: #912c2c;
 }
 
-.zap a {
-  text-decoration: none;
-  color: black;
+.right {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
 }
 
-@media (max-width: 815px) {
-  .textos {
-    text-align: center;
+img {
+  width: 40rem;
+}
+
+@media (max-width: 1000px) {
+  .sides {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
+
+  .left {
+    height: 100%;
+    width: 100%;
+  }
+
+  .bottom {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .right {
+    display: none;
+  }
+
 }

@@ -11,7 +11,7 @@
 
 .botao {
   border: 2px solid rgb(206, 66, 66);
-  color: rgb(206, 66, 66);
+  color: #ce4242;
   background-color: transparent;
   outline: none;
   transition: all 0.2s;
