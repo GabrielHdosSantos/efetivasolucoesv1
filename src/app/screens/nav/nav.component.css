@@ -59,7 +59,7 @@
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 90px;
 }
@@ -67,6 +67,7 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
+  margin-right: 8rem;
 }
 
 .nav-list li {
@@ -78,6 +79,7 @@ nav {
 .mobile-menu {
   cursor: pointer;
   display: none;
+  margin-right: 8rem;
 }
 
 .mobile-menu div {
@@ -87,7 +89,7 @@ nav {
   margin: 8px;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1250px) {
   .total {
     overflow-x: hidden;
   }
@@ -129,4 +131,20 @@ nav {
   color: #ce4242;
   width: 100%;
   text-align: center;
+}
+
+img {
+  height: 4rem;
+  width: 20rem;
+  margin-left: 8rem;
+}
+
+@media (max-width: 732px) {
+  img {
+    margin-left: 0rem;
+  }
+
+  .mobile-menu {
+    margin-right: 0rem;
+  }
 }
