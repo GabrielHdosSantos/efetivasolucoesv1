@@ -135,16 +135,23 @@ nav {
 
 img {
   height: 4rem;
-  width: 20rem;
+  width: 25rem;
   margin-left: 8rem;
 }
 
 @media (max-width: 732px) {
   img {
     margin-left: 0rem;
+    height: 3rem;
+    width: 20rem;
   }
 
   .mobile-menu {
     margin-right: 0rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
   }
 }
