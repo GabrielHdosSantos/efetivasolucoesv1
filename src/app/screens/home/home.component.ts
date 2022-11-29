@@ -21,7 +21,15 @@ export class HomeComponent implements OnInit {
     this.images = [
       {
         previewImageSrc:
-          'https://i.imgur.com/H010hQd.jpg',
+          'https://i.imgur.com/SZLg3vG.jpg',
+        thumbnailImageSrc:
+          'https://www.queroviajarmais.com/wp-content/uploads/2020/08/lago-louise.jpg',
+        alt: 'Description for Image 2',
+        title: 'Title 2',
+      },
+      {
+        previewImageSrc:
+          'https://sociisrh.com.br/wp-content/uploads/2019/06/Por-que-manter-a-equipe-trabalho-unida-e-tao-dificil-870x490.jpg',
         thumbnailImageSrc:
           'https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669__480.jpg',
         alt: 'Description for Image 2',
@@ -29,7 +37,7 @@ export class HomeComponent implements OnInit {
       },
       {
         previewImageSrc:
-          'https://i.imgur.com/w9srI8y.jpg',
+          'https://thecoachingcentre.com.au/wp-content/uploads/2020/05/b-n9.jpg',
         thumbnailImageSrc:
           './../images/img-2.jpg',
         alt: 'Description for Image 2',
@@ -37,20 +45,12 @@ export class HomeComponent implements OnInit {
       },
       {
         previewImageSrc:
-          'https://i.imgur.com/7I9028M.jpg',
+          'https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/EyvF0jkPg/videoblocks-multiethnic-colleagues-teamwork-in-modern-healthy-office-african-american-man-sits-on-table-plays-with-little-football_sjdcu7ewq_thumbnail-1080_01.png',
         thumbnailImageSrc:
-          'https://blog.emania.com.br/wp-content/uploads/2015/12/Papel-de-Parede-de-Paisagem.jpg',
+        'https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/EyvF0jkPg/videoblocks-multiethnic-colleagues-teamwork-in-modern-healthy-office-african-american-man-sits-on-table-plays-with-little-football_sjdcu7ewq_thumbnail-1080_01.png',
         alt: 'Description for Image 2',
         title: 'Title 2',
-      },
-      {
-        previewImageSrc:
-          'https://i.imgur.com/SZLg3vG.jpg',
-        thumbnailImageSrc:
-          'https://www.queroviajarmais.com/wp-content/uploads/2020/08/lago-louise.jpg',
-        alt: 'Description for Image 2',
-        title: 'Title 2',
-      },
+      }
     ];
   }
 

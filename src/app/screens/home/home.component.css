@@ -45,7 +45,7 @@
   border: 3px solid rgb(206, 66, 66);
 }
 
-.parag-missao {
+.parag-missao1, .parag-missao2 {
   font-size: 1.1rem;
   display: flex;
   flex-direction: column;
@@ -53,8 +53,8 @@
   list-style: none;
 }
 
-.parag-missao li {
-  margin-left: 4.5rem;
+.parag-missao1 li, .parag-missao2 li {
+  margin-left: 5.3rem;
 }
 
 .centro {
@@ -108,6 +108,19 @@
     margin-top: 3rem;
   }
 }
+
+@media (max-width: 434px) {
+  .parag-missao2 li {
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .parag-missao2 li {
+    margin-left: 2.8rem;
+  }
+}
+
 @media (max-width: 655px) {
   .centro {
     text-align: center;
@@ -130,7 +143,9 @@
     margin-top: 30px;
   }
 
-
+  .parag-missao {
+    margin: 0;
+  }
 
   .sobre {
     margin-left: 15px;
